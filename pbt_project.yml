@@ -271,26 +271,26 @@ dependencies:
   createdAt: '2024-07-12T16:24:17.546838Z'
   type: plibPypi
 projectDependencies:
-  '12654':
-    projectUID: 12654
+  '224':
+    projectUID: 224
     projectName: ProphecySparkBasicsPython
-    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=
+    repositoryPath: gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=
     version: 0.2.25
     isDefault: true
     author: null
     createdAt: '2024-07-12 16:24:17'
-  '12655':
-    projectUID: 12655
+  '225':
+    projectUID: 225
     projectName: ProphecyWarehousePython
-    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12655.git&subPath=
+    repositoryPath: gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_225.git&subPath=
     version: 0.0.8
     isDefault: true
     author: null
     createdAt: '2024-07-12 16:24:17'
-  '19668':
-    projectUID: 19668
+  '229':
+    projectUID: 229
     projectName: ProphecySparkAbinitioPython
-    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/qRkqzzJt_project_19668.git&subPath=
+    repositoryPath: gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_229.git&subPath=
     version: 0.0.24
     isDefault: false
     author: null
