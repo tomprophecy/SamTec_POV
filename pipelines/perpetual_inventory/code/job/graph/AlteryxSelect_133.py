@@ -1,0 +1,66 @@
+from pyspark.sql import *
+from pyspark.sql.functions import *
+from pyspark.sql.types import *
+from prophecy.utils import *
+from prophecy.libs import typed_lit
+from job.config.ConfigStore import *
+from job.udfs.UDFs import *
+
+def AlteryxSelect_133(spark: SparkSession, in0: DataFrame) -> DataFrame:
+    return in0.select(
+        col("PreviousQuarterStandardUnitCost"), 
+        col("ClosingStandardLaborCost"), 
+        col("OpeningStandardLaborCost"), 
+        col("ClosingCustomerSupplied"), 
+        col("OpeningStandardPlatingCost"), 
+        col("OpeningCustomerSupplied"), 
+        col("ClosingStandardUnitCost"), 
+        col("PreviousQuarterOrderPolicy"), 
+        col("ClosingBuyer"), 
+        col("PreviousQuarterStandardLaborCost"), 
+        col("ClosingStandardPlatingCost"), 
+        col("OpeningBuyer"), 
+        col("OpeningOrderPolicy"), 
+        col("PreviousQuarterBuyer"), 
+        col("PreviousQuarterCustomerSupplied"), 
+        col("ClosingOrderPolicy"), 
+        col("PreviousQuarterStandardPlatingCost"), 
+        col("OpeningStandardUnitCost"), 
+        col("Facility"), 
+        col("Plant"), 
+        col("PartNumber"), 
+        col("OpeningBalance"), 
+        col("Purchased"), 
+        col("Produced"), 
+        col("Sold"), 
+        col("Issued"), 
+        col("Adjusted"), 
+        col("TransferredIn"), 
+        col("TransferredOut"), 
+        col("ClosingBalance"), 
+        col("TransactedClosingBalance"), 
+        col("Reconciles"), 
+        col("Discrepancy"), 
+        col("OpeningUnitCost"), 
+        col("ClosingUnitCost"), 
+        col("PreviousQuarterUnitCost"), 
+        col("OpeningLaborCost"), 
+        col("ClosingLaborCost"), 
+        col("PreviousQuarterLaborCost"), 
+        col("OpeningPlannerCode"), 
+        col("ClosingPlannerCode"), 
+        col("PreviousQuarterPlannerCode"), 
+        col("OpeningIsBOM"), 
+        col("ClosingIsBOM"), 
+        col("PreviousQuarterIsBOM"), 
+        col("Series"), 
+        col("Era"), 
+        col("Weave"), 
+        col("Block"), 
+        col("Segment"), 
+        col("ItemType"), 
+        col("OpeningPlatingCost"), 
+        col("ClostingPlatingCost"), 
+        col("PreviousQuarterPlatingCost"), 
+        col("PCMfgItemType")
+    )

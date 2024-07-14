@@ -1,0 +1,68 @@
+from pyspark.sql import *
+from pyspark.sql.functions import *
+from pyspark.sql.types import *
+from prophecy.utils import *
+from prophecy.libs import typed_lit
+from job.config.ConfigStore import *
+from job.udfs.UDFs import *
+
+def AlteryxSelect_135(spark: SparkSession, in0: DataFrame) -> DataFrame:
+    return in0.select(
+        col("PreviousQuarterStandardUnitCost"), 
+        col("ClosingStandardLaborCost"), 
+        col("OpeningStandardLaborCost"), 
+        col("OpeningStandardPlatingCost"), 
+        col("ClosingStandardUnitCost"), 
+        col("PreviousQuarterStandardLaborCost"), 
+        col("ClosingStandardPlatingCost"), 
+        col("PreviousQuarterStandardPlatingCost"), 
+        col("OpeningStandardUnitCost"), 
+        col("Facility"), 
+        col("Plant"), 
+        col("PartNumber"), 
+        col("OpeningBalance"), 
+        col("OpeningValue"), 
+        col("Purchased"), 
+        col("Produced"), 
+        col("Sold"), 
+        col("Issued"), 
+        col("Adjusted"), 
+        col("TransferredIn"), 
+        col("TransferredOut"), 
+        col("ClosingBalance"), 
+        col("ClosingValue"), 
+        col("TransactedClosingBalance"), 
+        col("Reconciles"), 
+        col("Discrepancy"), 
+        col("OpeningUnitCost"), 
+        col("ClosingUnitCost"), 
+        col("PreviousQuarterUnitCost"), 
+        col("OpeningLaborCost"), 
+        col("ClosingLaborCost"), 
+        col("PreviousQuarterLaborCost"), 
+        col("OpeningPlatingCost"), 
+        col("ClostingPlatingCost"), 
+        col("PreviousQuarterPlatingCost"), 
+        col("OpeningPlannerCode"), 
+        col("ClosingPlannerCode"), 
+        col("PreviousQuarterPlannerCode"), 
+        col("OpeningIsBOM"), 
+        col("ClosingIsBOM"), 
+        col("PreviousQuarterIsBOM"), 
+        col("OpeningBuyer"), 
+        col("ClosingBuyer"), 
+        col("PreviousQuarterBuyer"), 
+        col("OpeningOrderPolicy"), 
+        col("ClosingOrderPolicy"), 
+        col("PreviousQuarterOrderPolicy"), 
+        col("OpeningCustomerSupplied"), 
+        col("ClosingCustomerSupplied"), 
+        col("PreviousQuarterCustomerSupplied"), 
+        col("Series"), 
+        col("Era"), 
+        col("Weave"), 
+        col("Block"), 
+        col("Segment"), 
+        col("ItemType"), 
+        col("PCMfgItemType")
+    )

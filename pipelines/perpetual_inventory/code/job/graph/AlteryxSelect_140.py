@@ -1,0 +1,68 @@
+from pyspark.sql import *
+from pyspark.sql.functions import *
+from pyspark.sql.types import *
+from prophecy.utils import *
+from prophecy.libs import typed_lit
+from job.config.ConfigStore import *
+from job.udfs.UDFs import *
+
+def AlteryxSelect_140(spark: SparkSession, in0: DataFrame) -> DataFrame:
+    return in0.select(
+        col("PreviousQuarterStandardUnitCost"), 
+        col("Reconciles"), 
+        col("Facility"), 
+        col("ClosingPlannerCode"), 
+        col("OpeningIsBOM"), 
+        col("ClostingPlatingCost"), 
+        col("PreviousQuarterIsBOM"), 
+        col("PreviousQuarterLaborCost"), 
+        col("ClosingStandardLaborCost"), 
+        col("PCMfgItemType"), 
+        col("PreviousQuarterUnitCost"), 
+        col("OpeningStandardLaborCost"), 
+        col("PreviousQuarterPlannerCode"), 
+        col("PartNumber"), 
+        col("ClosingLaborCost"), 
+        col("ClosingCustomerSupplied"), 
+        col("ClosingValue"), 
+        col("OpeningStandardPlatingCost"), 
+        col("Plant"), 
+        col("ItemType"), 
+        col("OpeningCustomerSupplied"), 
+        col("ClosingStandardUnitCost"), 
+        col("TransactedClosingBalance"), 
+        col("PreviousQuarterOrderPolicy"), 
+        col("OpeningPlannerCode"), 
+        col("ClosingBuyer"), 
+        col("Produced"), 
+        col("PreviousQuarterStandardLaborCost"), 
+        col("ClosingStandardPlatingCost"), 
+        col("OpeningBuyer"), 
+        col("Era"), 
+        col("OpeningValue"), 
+        col("Adjusted"), 
+        col("Segment"), 
+        col("ClosingBalance"), 
+        col("OpeningOrderPolicy"), 
+        col("Sold"), 
+        col("PreviousQuarterBuyer"), 
+        col("PreviousQuarterCustomerSupplied"), 
+        col("OpeningLaborCost"), 
+        col("ClosingUnitCost"), 
+        col("ClosingOrderPolicy"), 
+        col("Discrepancy"), 
+        col("Purchased"), 
+        col("PreviousQuarterStandardPlatingCost"), 
+        col("Series"), 
+        col("Block"), 
+        col("TransferredOut"), 
+        col("Issued"), 
+        col("OpeningUnitCost"), 
+        col("ClosingIsBOM"), 
+        col("OpeningPlatingCost"), 
+        col("Weave"), 
+        col("TransferredIn"), 
+        col("PreviousQuarterPlatingCost"), 
+        col("OpeningStandardUnitCost"), 
+        col("OpeningBalance")
+    )
