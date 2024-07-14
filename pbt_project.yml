@@ -1,6 +1,6 @@
 name: samtechPipelines
 description: ''
-version: 0.0.1
+version: '1.0'
 author: ayadav@prophecy.io
 language: python
 buildSystem: ''
