@@ -1,0 +1,9 @@
+<launch>
+    <!-- Turtlesim Node-->
+    <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
+ 
+    <!-- Node to drive turtle around with the keyboard-->
+    <node pkg="a1" type="paint.py" name="paint"/>
+    <node pkg="a1" type="teleporter.py" name="teleporter"/>
+    
+</launch>
